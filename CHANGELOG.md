@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v0.0.3]
+### Added
+- Filled out README
+### Changed
+- Name of script and made script executable
+
 ## [v0.0.2]
 ### Added
 - Parsing of changelog
