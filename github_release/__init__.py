@@ -7,6 +7,8 @@ import textwrap
 
 from github import Github
 
+__version__ = "0.0.4"
+
 def changelog_parser(changelog):
     releases = dict()
     version = None
@@ -19,7 +21,7 @@ def changelog_parser(changelog):
                     releases[version] = ''.join(buf)
                     buf = list()
                 version = m.group(1)
-            else:
+            elif version is not None:
                 buf.append(line)
         if version is not None:
             releases[version] = ''.join(buf)
